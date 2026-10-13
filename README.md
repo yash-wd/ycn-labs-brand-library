@@ -1,7 +1,7 @@
 # YCN Labs — Brand Library & Asset Archive
 
 **Repository:** `https://github.com/yash-wd/ycn-labs-brand-library`  
-**Controlling Authority:** `docs/YCN_DECISIONS.md` (`DECISION-001`, `DECISION-050`), Owner Decisions (`RULING-01`, `BRAND-PUBLIC-PUBLISH-07`)  
+**Controlling Authority:** `00_GOVERNANCE/CURRENT_SOURCE_AUTHORITY.md`  
 **Status:** Source Frozen, RULING-01 Recorded, Public Archive Established  
 
 ---

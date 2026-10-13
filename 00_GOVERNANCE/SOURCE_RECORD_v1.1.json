@@ -2,7 +2,7 @@
   "brand": "YCN Labs",
   "record_version": "v1.1",
   "updated_date": "2026-10-13",
-  "controlling_authority": "docs/YCN_DECISIONS.md (DECISION-001, DECISION-050)",
+  "controlling_authority": "00_GOVERNANCE/CURRENT_SOURCE_AUTHORITY.md",
   "gate_evaluation": {
     "task": "BRAND-ARCHIVE-06",
     "gate_criteria": "Aspect ratio delta <= 0.1% AND Silhouette IoU >= 95% at 2048w Lanczos scale",

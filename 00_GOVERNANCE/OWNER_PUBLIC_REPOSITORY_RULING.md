@@ -18,3 +18,17 @@ The Owner has explicitly decided that `yash-wd/ycn-labs-brand-library` will be m
 3. **Trademark & Proprietary Assets Notice:**
    - All logos, orbital marks, letterforms, and brand assets contained herein are proprietary trademarks and intellectual property of **YCN Labs**.
    - **No Permissive License:** Public repository visibility does NOT grant a permissive license (such as MIT, Apache 2.0, or BSD) to the logo artwork, wordmarks, or visual assets. Commercial reproduction, modification, or unauthorized redistribution of the brand marks is strictly prohibited.
+
+---
+
+## 2. Temporary Public-Repository Lifecycle & Migration Policy
+
+1. **Temporary Collaboration Workspace:**
+   - The current public status of `yash-wd/ycn-labs-brand-library` on GitHub is an intentional, temporary workspace designed to enable seamless pair-programming and review between Owner, GPT, Claude, and AGY sessions during active logo finalization, avoiding repeated multi-megabyte file uploads.
+2. **Planned Transition to Permanent Private Archive:**
+   - Upon finalization of the logo project (ratification of RULING-02, completion of production export generation under BRAND-EXPORT-05, and vector master delivery), the Owner intends to establish a permanent private repository.
+   - The entire brand library, including all tags, commit history, and continuity documentation, will be migrated to the private repository and verified.
+   - Only after complete, verified private archiving will the Owner consider deleting the public repository.
+3. **Public Exposure Caveat & Trademark Enforcement:**
+   - It is formally acknowledged for the record that deleting or privatizing the public GitHub repository later does not guarantee removal of copies already downloaded, forked, cached, or indexed while public.
+   - All visual assets, marks, and trade dress remain protected under strict proprietary trademark rights; public availability does not confer any license to reproduce or reuse the brand marks.

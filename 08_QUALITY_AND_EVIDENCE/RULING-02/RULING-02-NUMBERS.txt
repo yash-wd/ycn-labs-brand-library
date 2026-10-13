@@ -1,0 +1,89 @@
+================================================================================
+RULING-02 FORENSIC IMAGE COMPARISON METRICS (RAW NUMBERS)
+Generated: 2026-10-13
+================================================================================
+
+--- 1. SOURCE FILES & HASHES ---
+6675 Master: Main_YCN_LABS_logo_black_8K__6675x5195.png
+  Path: /home/ycn-labs/Desktop/YCN_LABS_MASTER/01_CURRENT_PROJECT/YCN_LABS_BRAND_LIBRARY/01_IMMUTABLE_SOURCE/Main_YCN_LABS_logo_black_8K__6675x5195.png
+  Dimensions: 6675x5195 px, Mode: RGB
+  SHA-256: 0ceebe4ccf81c478b8b2b2b6674f98ccc4dc93308c8a0e053243984c3a2c2be3
+
+Dark MASTER: ycn-logo-dark-transparent-MASTER.png
+  Path: /home/ycn-labs/Desktop/YCN_LABS_MASTER/01_CURRENT_PROJECT/YCN_LABS_BRAND_LIBRARY/11_HISTORICAL_ASSETS/masters/ycn-logo-dark-transparent-MASTER.png
+  Dimensions: 5620x4580 px, Mode: RGBA
+  SHA-256: 85808a7d15646a4847f75612eda95ddda09c9b51c4177f46e0b6814225a07784
+
+Light MASTER: ycn-logo-light-transparent-MASTER.png
+  Path: /home/ycn-labs/Desktop/YCN_LABS_MASTER/01_CURRENT_PROJECT/YCN_LABS_BRAND_LIBRARY/11_HISTORICAL_ASSETS/masters/ycn-logo-light-transparent-MASTER.png
+  Dimensions: 5620x4580 px, Mode: RGBA
+  SHA-256: 416de4b7c83a051cf9d11c3e4c88a36690b8be248ef5edb81f7a350af72b28a9
+
+--- 2. GLYPH-SCALE MEASUREMENT (STEP B.1) ---
+Dark Master White Bounding Box: X [137..5217], Y [507..3613] (Width: 5081, Height: 3107)
+6675 Master White Bounding Box: X [800..5880], Y [829..3933] (Width: 5081, Height: 3105)
+Width Scale Ratio (6675 / Dark): 1.000000 (Delta: 0.0000%)
+Height Scale Ratio (6675 / Dark): 0.999356 (Delta: 0.0644%)
+Resampling Applied: False
+Note: Native scale comparison: glyph scale ratio within 0.5% (width delta 0.0000%, height delta 0.0644%). No resampling applied.
+
+--- 3. INTEGER TRANSLATION BY LUMINANCE CORRELATION (STEP B.2) ---
+Best Translation Offset: dx = 663, dy = 320
+Pearson Luminance Correlation: 0.993566
+
+--- 4. DIFFERENCE ON HIGH-ALPHA PIXELS (STEP B.3 PART 1: ALPHA >= 250) ---
+High-Alpha Pixels Evaluated: 1,644,598
+Mean |dRGB|: 1.6583 / 255
+Percentage of Pixels with max|dRGB| > 16: 0.0000%
+
+--- 5. FULL OVERLAP DIFFERENCE (STEP B.3 PART 2: COMPOSITED OVER SAMPLED BG) ---
+Sampled 6675 Background RGB: [0.0, 1.0, 6.0]
+Total Overlap Pixels (5620x4580): 25,739,600
+Mean |dRGB|: 0.7756 / 255
+Percentage of Pixels with max|dRGB| > 16: 0.0000%
+
+--- 6. LIGHT VS DARK MASTER COMPARISON (STEP B.4) ---
+Alpha array_equal: False
+Alpha IoU (> 128): 97.2464%
+Mean |dAlpha|: 4.8411 / 255
+Fixed Point 1 (YCN white letterform, x=2764, y=1884):
+  Dark:  RGBA [255, 255, 255, 255]
+  Light: RGBA [0, 0, 0, 210]
+Fixed Point 2 (LABS cyan letterform, x=3729, y=3082):
+  Dark:  RGBA [2, 243, 255, 255]
+  Light: RGBA [0, 87, 110, 255]
+Fixed Point 3 (Crescent blue body, x=4442, y=3198):
+  Dark:  RGBA [1, 217, 255, 255]
+  Light: RGBA [0, 101, 153, 255]
+
+--- 7. FIVE 400% DETAIL CROPS (STEP B.5) ---
+Feature: Y break
+  Dark Coordinates: (930, 1000, 1070, 1140)
+  6675 Coordinates: (1593, 1320, 1733, 1460)
+  Mean |dRGB|: 0.1959 / 255
+  Max |dRGB|: 2.0000 / 255
+
+Feature: Top-right ringed node
+  Dark Coordinates: (3280, 450, 3420, 590)
+  6675 Coordinates: (3943, 770, 4083, 910)
+  Mean |dRGB|: 0.8693 / 255
+  Max |dRGB|: 8.0000 / 255
+
+Feature: Underline flare
+  Dark Coordinates: (5110, 3480, 5250, 3620)
+  6675 Coordinates: (5773, 3800, 5913, 3940)
+  Mean |dRGB|: 0.4113 / 255
+  Max |dRGB|: 2.0000 / 255
+
+Feature: LABS
+  Dark Coordinates: (1630, 2970, 1770, 3110)
+  6675 Coordinates: (2293, 3290, 2433, 3430)
+  Mean |dRGB|: 1.1223 / 255
+  Max |dRGB|: 8.0000 / 255
+
+Feature: Crescent edge
+  Dark Coordinates: (130, 2310, 270, 2450)
+  6675 Coordinates: (793, 2630, 933, 2770)
+  Mean |dRGB|: 1.0609 / 255
+  Max |dRGB|: 3.0000 / 255
+
