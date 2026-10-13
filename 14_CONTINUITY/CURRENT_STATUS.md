@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-13  
 **Repository:** `https://github.com/yash-wd/ycn-labs-brand-library` (Public)  
-**Status:** Source Frozen, RULING-01 Recorded, Public Archive Established  
+**Status:** Source Frozen, RULING-01 Recorded, Downloads Cleaned, Archive Complete  
 
 ## Current Baseline:
 1. **Source Artwork Resolution & Provenance:**
@@ -17,3 +17,13 @@
    - August SVGs `g070`–`g155`: Early wireframe monogram concepts; different design.
 4. **Vector Master Status:**
    - Vectorization deferred to human vector artist with 5620/6675 underlay. AI auto-tracing rejected.
+5. **Consolidation & Cleanup (BRAND-ARCHIVE-CLEANUP-08):**
+   - Redundant copies in `/home/ycn-labs/Downloads/` (`Main_YCN_LABS_logo_black_8K.png` and `YCN_LABS_Brand_Source_Foundation_2026-10-13.zip`) verified against library and GitHub copies, then deleted per Owner authorization.
+   - Desktop master `/home/ycn-labs/Desktop/Main_YCN_LABS_logo_black_8K.png` (6675×5195) remains strictly intact and untouched.
+   - Consolidated previously loose documentation and handoff items:
+     - `00_GOVERNANCE/YCN_LABS_Enterprise_Brand_Management_Plan.md`
+     - `10_AGENT_HANDOFF/CLAUDE_READ_FIRST.md`
+     - `10_AGENT_HANDOFF/CLAUDE_FILE_INDEX.csv`
+     - `10_AGENT_HANDOFF/build_brand_kit.py` (*Historical archive build script*)
+     - `11_HISTORICAL_ASSETS/LOGO-DECISIONS.md`
+   - Complete record in `14_CONTINUITY/DOWNLOADS_CLEANUP_2026-10-13.md`.
