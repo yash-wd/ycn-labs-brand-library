@@ -1,0 +1,111 @@
+{
+  "package_status": "SOURCE_AND_GOVERNANCE_FOUNDATION_ONLY",
+  "source_sha256": "8b982547e2c0b5990b710941d29ada29cadfcf6142278998ddf10ae0ace1d943",
+  "files": [
+    {
+      "path": "00_GOVERNANCE/OWNER_SOURCE_RULING.md",
+      "bytes": 1960,
+      "sha256": "75d753c93a2fc0b8675e40117bcfdc0bc76726b87fbacc89611943443ac452a1"
+    },
+    {
+      "path": "00_GOVERNANCE/SOURCE_RECORD.json",
+      "bytes": 671,
+      "sha256": "37c11821efadc43ba2b331b9923180aa562288b3aca8fb9c3778c5d3617e5665"
+    },
+    {
+      "path": "00_GOVERNANCE/STATUS_AND_CHANGES.md",
+      "bytes": 738,
+      "sha256": "f2f885286aaab179ffdd1a754b19ce343d073d9db679953ce4c866873ebffaac"
+    },
+    {
+      "path": "01_IMMUTABLE_SOURCE/Main_YCN_LABS_logo_black_8K.png",
+      "bytes": 3158172,
+      "sha256": "8b982547e2c0b5990b710941d29ada29cadfcf6142278998ddf10ae0ace1d943"
+    },
+    {
+      "path": "01_IMMUTABLE_SOURCE/SHA256SUMS.txt",
+      "bytes": 98,
+      "sha256": "8bd66c40435319573fb0d14a316cfbb53d72776882bdbc57cd6a00c90f67ac39"
+    },
+    {
+      "path": "02_BRAND_DESIGN/ARTWORK_INVENTORY.md",
+      "bytes": 1606,
+      "sha256": "bbcfa03bed0364b220ecab0a985fee442a0466b4234c76de819efebc9773c650"
+    },
+    {
+      "path": "03_VECTOR_RECONSTRUCTION/FEASIBILITY_AND_BRIEF.md",
+      "bytes": 2953,
+      "sha256": "7ea49d173374a87556f3efe01fab93d3c6a98c97d0cfc70bd2f8af498a6fe6c6"
+    },
+    {
+      "path": "04_APPROVED_LOGO_VARIANTS/README.md",
+      "bytes": 739,
+      "sha256": "5f4b1c25cade5b75e2aef3ca3ea393d1afd9a53bdf8d02d81b7a76207122649e"
+    },
+    {
+      "path": "05_EXPORTS/EXPORT_MATRIX.csv",
+      "bytes": 1873,
+      "sha256": "448e6d92ff55e90e48089660551bb0c1b154b1b83470e6063decbf92974a8086"
+    },
+    {
+      "path": "05_EXPORTS/README.md",
+      "bytes": 639,
+      "sha256": "9a0e365be6f665d21c9408d5e430e19a96321f8abba1ae9f9bd60a79bbf671a5"
+    },
+    {
+      "path": "06_DESIGN_TOKENS/COLOR_AND_TYPE_POLICY.md",
+      "bytes": 1204,
+      "sha256": "227d557fc5b791d39e8da5cd24b20de51c727cc27b0affebcd37fd56f81b46e7"
+    },
+    {
+      "path": "06_DESIGN_TOKENS/SAMPLED_PALETTE.json",
+      "bytes": 2738,
+      "sha256": "3cd0ffb9684064e47e01722f41d485df6af93496ef0382eed15c7d45c91331f6"
+    },
+    {
+      "path": "07_GUIDELINES/BRAND_USAGE_DRAFT.md",
+      "bytes": 2761,
+      "sha256": "7fb8454a7c1173f25d5afed90f741d94ad98f281592d5832d78c44c1fb9eb9f1"
+    },
+    {
+      "path": "07_GUIDELINES/PLACEMENT_AND_PRINT_DRAFT.md",
+      "bytes": 1289,
+      "sha256": "ca8155f22280eed8074a4fd0f442cd7dde7b287663f780c6332a73d41be1eb50"
+    },
+    {
+      "path": "08_QUALITY_AND_EVIDENCE/QA_EVIDENCE_TEMPLATE.tsv",
+      "bytes": 162,
+      "sha256": "d68bb3392a13da5d88e54cc2cb67012535af19e74bd49aa01c8a02ed5f30d725"
+    },
+    {
+      "path": "08_QUALITY_AND_EVIDENCE/QA_RELEASE_GATES.md",
+      "bytes": 2874,
+      "sha256": "2b6b52bd370551099accaae52b6da162f3f4a0574e2071452592debeee1246fe"
+    },
+    {
+      "path": "09_RELEASES/README.md",
+      "bytes": 880,
+      "sha256": "2b05aa321d101cd2dfaae983b5f823ef2b046fa372e011b1ce267e21f61c5a96"
+    },
+    {
+      "path": "10_AGENT_HANDOFF/AGY_TASK_BRAND_SOURCE_CONTROL_03.md",
+      "bytes": 2758,
+      "sha256": "ced255d735cd87d52f28761ee2384e7c6ec5b405e424d8e3b9a6dc51f2336b13"
+    },
+    {
+      "path": "10_AGENT_HANDOFF/PROJECT_PHASES.md",
+      "bytes": 1205,
+      "sha256": "319b76e2014237cfa72373e9841501be1fdc585a2a5aa0e41aafcadda6888c1a"
+    },
+    {
+      "path": "10_AGENT_HANDOFF/verify_original.py",
+      "bytes": 1049,
+      "sha256": "8101f8ba5ff1b099018af3757e513752576754327af5f6d0d5361f9b1332b904"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3128,
+      "sha256": "bac0a7ce38687e5b7e53d9f5898db45dc8e86af131673a80d85a2b3a72be8ec6"
+    }
+  ]
+}

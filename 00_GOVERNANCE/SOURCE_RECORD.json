@@ -1,0 +1,19 @@
+{
+  "brand": "YCN Labs",
+  "asset_role": "SOLE_OWNER_SUPPLIED_OFFICIAL_ORIGINAL",
+  "source_status": "IMMUTABLE_MASTER_RASTER",
+  "source_filename": "Main_YCN_LABS_logo_black_8K.png",
+  "sha256": "8b982547e2c0b5990b710941d29ada29cadfcf6142278998ddf10ae0ace1d943",
+  "bytes": 3158172,
+  "width_px": 2048,
+  "height_px": 1593,
+  "aspect_ratio": 1.285624608,
+  "format": "PNG",
+  "channels": "8-bit RGBA",
+  "alpha_coverage": "fully opaque (all 255)",
+  "embedded_icc_profile": false,
+  "transparent": false,
+  "owner_designation_date": "2026-10-13",
+  "approved_variants": [],
+  "caution": "No true independent scalable vector can be proven exact using this file alone."
+}

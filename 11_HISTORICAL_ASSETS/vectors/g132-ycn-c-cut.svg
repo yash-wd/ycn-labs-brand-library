@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 24" width="64" height="24" role="img" aria-labelledby="t d"><title id="t">YCN Labs</title>
+<desc id="d">YCN wordmark with shouldered Y and 45 degree cut terminals.</desc>
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="butt" stroke-linejoin="miter">
+<path d="M3.5 3.5 L3.5 6 L10 12.5 L16.5 6 L16.5 3.5 M10 12.5 L10 20.5"/>
+<path d="M36 5.5 L34 3.5 L29.5 3.5 L27.5 5.5 L27.5 18.5 L29.5 20.5 L34 20.5 L36 18.5"/>
+<path d="M47.5 20.5 L47.5 3.5 L60.5 20.5 L60.5 3.5"/>
+</g></svg>

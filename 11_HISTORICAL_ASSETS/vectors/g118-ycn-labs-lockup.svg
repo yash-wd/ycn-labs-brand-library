@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 24" width="104" height="24" role="img" aria-labelledby="t d">
+<title id="t">YCN Labs</title>
+<desc id="d">Horizontal YCN Labs lockup: cut-direction YCN with a quieter LABS.</desc>
+<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="butt" stroke-linejoin="miter">
+<path d="M3.5 3.5 L3.5 6 L10 12.5 L16.5 6 L16.5 3.5 M10 12.5 L10 20.5"/>
+<path d="M36 5.5 L34 3.5 L29.5 3.5 L27.5 5.5 L27.5 18.5 L29.5 20.5 L34 20.5 L36 18.5"/>
+<path d="M47.5 20.5 L47.5 3.5 L60.5 20.5 L60.5 3.5"/>
+</g>
+<g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="butt" stroke-linejoin="miter">
+<path d="M68 10.5 L68 20.5 L73.5 20.5"/>
+<path d="M75.5 20.5 L79 10.5 L82.5 20.5 M76.7 17 L81.3 17"/>
+<path d="M84.5 20.5 L84.5 10.5 L89 10.5 L90.5 12 L90.5 13.8 L89 15.3 L84.5 15.3 M89 15.3 L90.8 17 L90.8 18.8 L89 20.5 L84.5 20.5"/>
+<path d="M99 11.9 L97.5 10.5 L94.5 10.5 L93 12 L93 13.8 L94.5 15.3 L97.5 15.3 L99 16.8 L99 18.7 L97.5 20.5 L94.5 20.5 L93 19.1"/>
+</g></svg>

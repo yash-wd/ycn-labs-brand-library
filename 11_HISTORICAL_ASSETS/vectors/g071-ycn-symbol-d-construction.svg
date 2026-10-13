@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-labelledby="t d">
+<title id="t">YCN Labs symbol — construction sheet</title>
+<desc id="d">Direction D plotted on a 24 by 24 unit grid at 10x, showing every coordinate and the stroke weight.</desc>
+<g stroke="#B4B2A9" stroke-width="0.5" fill="none">
+<path d="M0 0 H240 M0 10 H240 M0 20 H240 M0 30 H240 M0 40 H240 M0 50 H240 M0 60 H240 M0 70 H240 M0 80 H240 M0 90 H240 M0 100 H240 M0 110 H240 M0 120 H240 M0 130 H240 M0 140 H240 M0 150 H240 M0 160 H240 M0 170 H240 M0 180 H240 M0 190 H240 M0 200 H240 M0 210 H240 M0 220 H240 M0 230 H240 M0 240 H240"/>
+<path d="M0 0 V240 M10 0 V240 M20 0 V240 M30 0 V240 M40 0 V240 M50 0 V240 M60 0 V240 M70 0 V240 M80 0 V240 M90 0 V240 M100 0 V240 M110 0 V240 M120 0 V240 M130 0 V240 M140 0 V240 M150 0 V240 M160 0 V240 M170 0 V240 M180 0 V240 M190 0 V240 M200 0 V240 M210 0 V240 M220 0 V240 M230 0 V240 M240 0 V240"/>
+</g>
+<g stroke="#888780" stroke-width="1" fill="none">
+<path d="M0 40 H240 M0 70 H240 M0 140 H240 M0 210 H240 M50 0 V240 M120 0 V240 M190 0 V240"/>
+</g>
+<g fill="none" stroke="#0A0C10" stroke-width="30" stroke-linecap="butt" stroke-linejoin="miter">
+<path d="M50 40 L50 70 L120 140 L190 70 L190 40"/>
+<path d="M120 140 L120 210"/>
+</g>
+<g fill="#1E5BFF">
+<circle cx="50" cy="40" r="3.5"/><circle cx="50" cy="70" r="3.5"/><circle cx="120" cy="140" r="3.5"/><circle cx="190" cy="70" r="3.5"/><circle cx="190" cy="40" r="3.5"/><circle cx="120" cy="210" r="3.5"/>
+</g>
+</svg>

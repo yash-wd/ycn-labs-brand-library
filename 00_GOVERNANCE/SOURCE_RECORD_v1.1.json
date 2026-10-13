@@ -1,0 +1,47 @@
+{
+  "brand": "YCN Labs",
+  "record_version": "v1.1",
+  "updated_date": "2026-10-13",
+  "controlling_authority": "docs/YCN_DECISIONS.md (DECISION-001, DECISION-050)",
+  "gate_evaluation": {
+    "task": "BRAND-ARCHIVE-06",
+    "gate_criteria": "Aspect ratio delta <= 0.1% AND Silhouette IoU >= 95% at 2048w Lanczos scale",
+    "measured_aspect_ratio_delta": "0.0572%",
+    "measured_silhouette_iou": "95.92%",
+    "measured_mean_pixel_diff_artwork": "2.77 / 255 (1.09%)",
+    "measured_mean_pixel_diff_canvas": "0.69 / 255 (0.27%)",
+    "gate_status": "PASS",
+    "gate_verdict": "SOURCE-CANDIDATE",
+    "finding": "The 6675x5195 desktop image is mathematically verified as the higher-resolution parent source artwork from which the 2048x1593 file was downscaled."
+  },
+  "sources": [
+    {
+      "role": "HIGH_RESOLUTION_SOURCE_CANDIDATE",
+      "status": "SOURCE-CANDIDATE (PENDING OWNER RULING)",
+      "filename": "Main_YCN_LABS_logo_black_8K__6675x5195.png",
+      "original_path": "/home/ycn-labs/Desktop/Main_YCN_LABS_logo_black_8K.png",
+      "sha256": "0ceebe4ccf81c478b8b2b2b6674f98ccc4dc93308c8a0e053243984c3a2c2be3",
+      "bytes": 6633409,
+      "width_px": 6675,
+      "height_px": 5195,
+      "aspect_ratio": 1.284889,
+      "format": "PNG",
+      "channels": "8-bit RGB",
+      "transparent": false
+    },
+    {
+      "role": "OWNER_UPLOADED_ORIGINAL",
+      "status": "IMMUTABLE_ORIGINAL_REFERENCE",
+      "filename": "Main_YCN_LABS_logo_black_8K.png",
+      "original_path": "/home/ycn-labs/Downloads/Main_YCN_LABS_logo_black_8K.png",
+      "sha256": "8b982547e2c0b5990b710941d29ada29cadfcf6142278998ddf10ae0ace1d943",
+      "bytes": 3158172,
+      "width_px": 2048,
+      "height_px": 1593,
+      "aspect_ratio": 1.285625,
+      "format": "PNG",
+      "channels": "8-bit RGBA",
+      "transparent": false
+    }
+  ]
+}

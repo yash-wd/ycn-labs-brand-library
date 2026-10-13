@@ -1,0 +1,109 @@
+{
+  "source_file": "Main_YCN_LABS_logo_black_8K.png",
+  "source_sha256": "8b982547e2c0b5990b710941d29ada29cadfcf6142278998ddf10ae0ace1d943",
+  "status": "PROVISIONAL_MEASURED_SWATCHES_NOT_A_BRAND_TOKEN_CONTRACT",
+  "method": "dominant near-black / pale samples plus exploratory color clusters from sampled saturated blue/cyan pixels; gradient stops not recovered",
+  "important": "The original PNG contains composite gradients and glow. HEX values are approximate sample representatives, not proven authoring swatches or vector gradient stops. Do not recolor the artwork using these guesses.",
+  "color_management": "No embedded ICC in the image; interpret as sRGB provisionally and embed a controlled output profile after proof; archive source bytes unchanged.",
+  "swatches": [
+    {
+      "token": "candidate.ink.background",
+      "hex": "#000205",
+      "rgb": [
+        0,
+        2,
+        5
+      ],
+      "role": "near-black sampled field, approximate",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.ink.deep",
+      "hex": "#000307",
+      "rgb": [
+        0,
+        3,
+        7
+      ],
+      "role": "near-black subtle variation",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.lettering.white",
+      "hex": "#F8FAFC",
+      "rgb": [
+        248,
+        250,
+        252
+      ],
+      "role": "light lettering median bright region",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.cyan.primary",
+      "hex": "#0ADEF8",
+      "rgb": [
+        10,
+        222,
+        248
+      ],
+      "role": "sampled cyan cluster",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.blue.electric",
+      "hex": "#05A9F3",
+      "rgb": [
+        5,
+        169,
+        243
+      ],
+      "role": "sampled bright blue cluster",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.blue.deep",
+      "hex": "#0279D7",
+      "rgb": [
+        2,
+        121,
+        215
+      ],
+      "role": "sampled rich blue cluster",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.blue.shadow",
+      "hex": "#074D7C",
+      "rgb": [
+        7,
+        77,
+        124
+      ],
+      "role": "sampled dim blue cluster",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.cyan.glow",
+      "hex": "#43E7FB",
+      "rgb": [
+        67,
+        231,
+        251
+      ],
+      "role": "sampled high luminance cyan cluster",
+      "approval": "NOT_APPROVED"
+    },
+    {
+      "token": "candidate.cyan.ice",
+      "hex": "#83F5FB",
+      "rgb": [
+        131,
+        245,
+        251
+      ],
+      "role": "sampled near-white cyan highlight",
+      "approval": "NOT_APPROVED"
+    }
+  ]
+}
