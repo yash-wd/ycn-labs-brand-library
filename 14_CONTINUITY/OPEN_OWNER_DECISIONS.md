@@ -1,17 +1,20 @@
-# Open Owner Decisions & Approvals
+# Owner Decisions Register
 
-The following decisions require explicit Owner rulings:
+## DECIDED:
+- **RULING-01: Parent Source Ratification (DECIDED 13 Oct 2026)**
+  - **Verdict:** "6675 is the original; 2048 is its uploaded copy."
+  - **Details:** `Main_YCN_LABS_logo_black_8K__6675x5195.png` (SHA256: `0ceebe4ccf81c478b8b2b2b6674f98ccc4dc93308c8a0e053243984c3a2c2be3`) is ratified as the Authoritative Master Source. The 2048×1593 file (`8b982547...`) is maintained as its uploaded reference downscale.
 
-1. **RULING-01: Parent Source Ratification**
-   - *Option A:* Formally ratify `Main_YCN_LABS_logo_black_8K__6675x5195.png` as the Authoritative Master Source, designating the 2048×1593 file as its uploaded downscale reference. (Recommended)
-   - *Option B:* Maintain the 2048×1593 file as sole authoritative source, treating the 6675×5195 file as an auxiliary high-resolution candidate.
+---
 
-2. **RULING-02: Transparent Raster Derivatives Approval**
-   - *Option A:* Ratify `ycn-logo-dark-transparent-MASTER.png` and `ycn-logo-light-transparent-MASTER.png` (5620×4580) as approved production masters for generating the v1.0 raster export kit (favicons, app icons, web logos, OG image). (Recommended)
-   - *Option B:* Reject 5620×4580 files and require background extraction directly from the 6675/2048 opaque original.
+## PENDING / OPEN:
+1. **RULING-02: Transparent Raster Derivatives Approval (PENDING)**
+   - *Status:* Awaiting Owner visual review of `11_HISTORICAL_ASSETS/audits/06-identity-audit/IDENTITY-SHEET.png`.
+   - *Scope:* Ratify `ycn-logo-dark-transparent-MASTER.png` (and compare/ratify `ycn-logo-light-transparent-MASTER.png`) as approved high-resolution raster derivatives for generating the production export kit.
 
-3. **RULING-03: Vector Production Authorization**
-   - Commission a human vector artist to redraw the logo as layered SVG/AI using the 5620/6675 PNG underlay, targeting v2.0 release.
+2. **RULING-03: Vector Production Authorization (PENDING)**
+   - *Status:* Deferred to v2.0.
+   - *Scope:* Commission a human vector artist to redraw the logo as layered SVG/AI using the 5620/6675 PNG underlay. AI auto-tracing rejected.
 
-4. **RULING-04: Light-Theme Surface Treatment**
-   - On light backgrounds, display the dark mark on a dark tile panel until an independently approved on-light recolored artwork is authored.
+3. **RULING-04: Light-Theme Surface Treatment (PENDING)**
+   - *Status:* On light backgrounds, display the dark mark on a dark tile panel until an independently approved on-light recolored artwork is authored.
