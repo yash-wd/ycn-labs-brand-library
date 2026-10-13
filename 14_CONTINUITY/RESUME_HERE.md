@@ -12,9 +12,10 @@
 
 ## 1. Cold-Resume Core Facts (State of Record)
 
-- **Last Close Date & Time:** 2026-10-13 13:30:55 IST
-- **Brand Library Base Commit:** `c447837` (verified on `origin/main`)
-- **Website Base Commit:** `43f3345` (verified on `origin/main`)
+- **Last Close Date & Time:** 2026-10-13T13:48:55+05:30 (from `YCN_LABS_MASTER/LAST_CLOSE.txt`)
+- **Latest State Reference:** Latest state = latest commit on GitHub main of each repo
+- **Brand Library Commit (HEAD before this close):** `c447837` (verified on `origin/main`)
+- **Website Commit (HEAD before this close):** `43f3345` (verified on `origin/main`)
 - **Vault Backup Status:** **LOCAL ONLY — NO EXTERNAL BACKUP RECORDED**. The local vault `/home/ycn-labs/Desktop/YCN_LABS_MASTER/` requires physical copy to an external drive by the Owner. This status must be reported at every close until confirmed.
 - **Package Checksums Baseline Notice:**  
   `PACKAGE-SHA256SUMS.txt` describes the ZIP as delivered on 13 Oct. `README.md`, `01_IMMUTABLE_SOURCE/SHA256SUMS.txt` and `08_QUALITY_AND_EVIDENCE/QA_RELEASE_GATES.md` were edited afterwards on purpose and show FAILED there. The live check is `14_CONTINUITY/SHA256SUMS.txt`; originals are inside `12_ORIGINAL_PACKAGES/`.
@@ -23,8 +24,8 @@
 
 ## 2. Completed Tasks Summary
 
-1. **`BRAND-INTAKE-01` / `BRAND-LINEAGE-02`:** Comprehensive audit of all 962 candidate files; identified 6675px original source and 5620px transparent masters.
-2. **`BRAND-SOURCE-CONTROL-03` / `PUBLISH-07`:** Built structured 14-folder brand library; published public repository on GitHub (`yash-wd/ycn-labs-brand-library`).
+1. **`BRAND-INTAKE-01` / `BRAND-LINEAGE-02` / `BRAND-ARCHIVE-06`:** Comprehensive audit of candidate files; 6675px master identified in BRAND-ARCHIVE-06; transparent masters evaluated in BRAND-LINEAGE-02.
+2. **`BRAND-SOURCE-CONTROL-03` / `PUBLISH-07`:** Built structured 15-folder brand library (00–14); published public repository on GitHub (`yash-wd/ycn-labs-brand-library`).
 3. **`BRAND-CLEANUP-08` / `DAY-CLOSE-09`:** Verified file hashes and eliminated redundant Downloads duplicates.
 4. **`RULING-01` Ratification:** Ratified 6675×5195 image as the Authoritative Master Source; preserved 2048px as uploaded reference downscale.
 5. **`RULING-02` Forensic Evidence Generation:** Completed pixel-level forensic measurements proving native 1:1 scale (0.0000% w / 0.0644% h delta, dx=663, dy=320 offset, 0.0000% pixels > 16 delta) between 6675 master and 5620 transparent master.
@@ -39,7 +40,7 @@
   Owner inspects `08_QUALITY_AND_EVIDENCE/RULING-02/RULING-02-SHEET.png` and `RULING-02-NUMBERS.txt` to approve dark master (`RULING-02a`) and light master (`RULING-02b`). Once approved, generate the production export matrix (favicons, app icons, web variants, OpenGraph banners).
 - **Website Workstream:**  
   **Next Task:** **`YCN-NAV-ORIGINAL-STYLE-01`**  
-  Awaiting Owner verdict on Option A vs B (Option A cyan glow restoration at 80 px/s with bounded test amendment in `__tests__/navbar-polish-04.test.tsx`). Owner must say "A" and "yes" to proceed.
+  Restore original cyan glow with fading tail at 80 px/s (Option A) with bounded test update to `__tests__/navbar-polish-04.test.tsx` (PENDING OWNER APPROVAL). Owner must say "A" and "yes" to proceed.
 
 ---
 
