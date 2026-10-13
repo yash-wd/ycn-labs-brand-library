@@ -3,6 +3,7 @@
 **Document ID:** `14_CONTINUITY/RESUME_HERE.md`  
 **Effective Date:** 2026-10-13  
 **Status:** Permanent, Date-Independent Canonical Entry Point for Future AI Sessions  
+**Owner Working Routine:** https://github.com/yash-wd/ycn-labs-site/blob/main/docs/YCN_LABS_OWNER_WORKING_ROUTINE.md  
 **Dual-Repository Architecture:**
 - **Brand Library:** `https://github.com/yash-wd/ycn-labs-brand-library` (Local: `/home/ycn-labs/Desktop/YCN_LABS_MASTER/01_CURRENT_PROJECT/YCN_LABS_BRAND_LIBRARY/`)
 - **Website Repository:** `https://github.com/yash-wd/ycn-labs-site` (Local: `/home/ycn-labs/Desktop/ycn-labs-site/`)
