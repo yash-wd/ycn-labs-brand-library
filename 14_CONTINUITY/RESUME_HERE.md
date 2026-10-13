@@ -13,10 +13,10 @@
 
 ## 1. Cold-Resume Core Facts (State of Record)
 
-- **Last Close Date & Time:** 2026-10-13T13:48:55+05:30 (from `YCN_LABS_MASTER/LAST_CLOSE.txt`)
+- **Last Close Date & Time:** 2026-10-13T14:16:00+05:30 (from `YCN_LABS_MASTER/LAST_CLOSE.txt`)
 - **Latest State Reference:** Latest state = latest commit on GitHub main of each repo
-- **Brand Library Commit (HEAD before this close):** `c447837` (verified on `origin/main`)
-- **Website Commit (HEAD before this close):** `43f3345` (verified on `origin/main`)
+- **Brand Library Commit (HEAD before this close):** `ddf0664` (verified on `origin/main`)
+- **Website Commit (HEAD before this close):** `770c034` (verified on `origin/main`)
 - **Vault Backup Status:** **LOCAL ONLY — NO EXTERNAL BACKUP RECORDED**. The local vault `/home/ycn-labs/Desktop/YCN_LABS_MASTER/` requires physical copy to an external drive by the Owner. This status must be reported at every close until confirmed.
 - **Package Checksums Baseline Notice:**  
   `PACKAGE-SHA256SUMS.txt` describes the ZIP as delivered on 13 Oct. `README.md`, `01_IMMUTABLE_SOURCE/SHA256SUMS.txt` and `08_QUALITY_AND_EVIDENCE/QA_RELEASE_GATES.md` were edited afterwards on purpose and show FAILED there. The live check is `14_CONTINUITY/SHA256SUMS.txt`; originals are inside `12_ORIGINAL_PACKAGES/`.
