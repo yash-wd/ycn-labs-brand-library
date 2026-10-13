@@ -67,9 +67,7 @@ delta_h_pct = abs(ratio_h - 1.0) * 100.0
 resampled = False
 resampling_note = "Native scale comparison: glyph scale ratio within 0.5% (width delta 0.0000%, height delta 0.0644%). No resampling applied."
 
-# Step B.2: Find best integer translation (dx, dy) by luminance correlation
-dx = 663
-dy = 320
+# Step B.2: Find best integer translation (dx, dy) dynamically by luminance correlation
 H_dark, W_dark = arr_dark.shape[:2]
 
 # Compute luminance
@@ -78,9 +76,25 @@ lum_dark = (0.299 * arr_dark[:,:,0] + 0.587 * arr_dark[:,:,1] + 0.114 * arr_dark
 
 mask_core = arr_dark[:,:,3] > 200
 ys_c, xs_c = np.where(mask_core)
-lum_target = lum_6675[ys_c + dy, xs_c + dx]
 lum_src = lum_dark[ys_c, xs_c]
-corr_coeff = float(np.corrcoef(lum_target, lum_src)[0, 1])
+
+init_dx = box_6675[0] - box_dark[0]
+init_dy = box_6675[1] - box_dark[1]
+
+best_corr = -1.0
+best_dx, best_dy = init_dx, init_dy
+
+for test_dy in range(init_dy - 5, init_dy + 5):
+    for test_dx in range(init_dx - 5, init_dx + 5):
+        lum_target = lum_6675[ys_c + test_dy, xs_c + test_dx]
+        c = float(np.corrcoef(lum_target, lum_src)[0, 1])
+        if c > best_corr:
+            best_corr = c
+            best_dx, best_dy = test_dx, test_dy
+
+dx = best_dx
+dy = best_dy
+corr_coeff = best_corr
 
 # Sample 6675 background color
 bg_samples = np.concatenate([
@@ -236,7 +250,7 @@ with open(numbers_path, "w", encoding="utf-8") as f:
     f.write(f"Fixed Point 2 (LABS cyan letterform, x={pt_labs[0]}, y={pt_labs[1]}):\n")
     f.write(f"  Dark:  RGBA {rgb_labs_dark}\n")
     f.write(f"  Light: RGBA {rgb_labs_light}\n")
-    f.write(f"Fixed Point 3 (Crescent blue body, x={pt_cres[0]}, y={pt_cres[1]}):\n")
+    f.write(f"Fixed Point 3 (LABS cyan letterform [S right stem], x={pt_cres[0]}, y={pt_cres[1]}):\n")
     f.write(f"  Dark:  RGBA {rgb_cres_dark}\n")
     f.write(f"  Light: RGBA {rgb_cres_light}\n\n")
     

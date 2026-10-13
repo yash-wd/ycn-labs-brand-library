@@ -8,13 +8,17 @@
 ---
 
 ## PENDING / OPEN:
-1. **RULING-02: Transparent Raster Derivatives Approval (PENDING)**
-   - *Status:* Awaiting Owner visual review of `11_HISTORICAL_ASSETS/audits/06-identity-audit/IDENTITY-SHEET.png`.
-   - *Scope:* Ratify `ycn-logo-dark-transparent-MASTER.png` (and compare/ratify `ycn-logo-light-transparent-MASTER.png`) as approved high-resolution raster derivatives for generating the production export kit.
+1. **RULING-02a: Dark Transparent Master Approval (PENDING)**
+   - *Scope:* `ycn-logo-dark-transparent-MASTER.png` (5620×4580, SHA256: `85808a7d15646a4847f75612eda95ddda09c9b51c4177f46e0b6814225a07784`).
+   - *Forensic Metrics:* Native 1:1 scale with 6675 master (0.0000% w, 0.0644% h delta), dx=663, dy=320 offset, 0.0000% pixels > 16 delta. Same pixels, background removed. Safe to approve.
 
-2. **RULING-03: Vector Production Authorization (PENDING)**
+2. **RULING-02b: Light Transparent Master Approval (PENDING)**
+   - *Scope:* `ycn-logo-light-transparent-MASTER.png` (5620×4580, SHA256: `416de4b7c83a051cf9d11c3e4c88a36690b8be248ef5edb81f7a350af72b28a9`).
+   - *Forensic Metrics:* Recolored for white backgrounds (black YCN, dark-teal LABS). Alpha IoU with dark master = 97.2464%, Mean |dAlpha| = 4.8411. Shape edges differ by ~3% (design adaptation). Owner judges by eye.
+
+3. **RULING-03: Vector Production Authorization (PENDING)**
    - *Status:* Deferred to v2.0.
-   - *Scope:* Commission a human vector artist to redraw the logo as layered SVG/AI using the 5620/6675 PNG underlay. AI auto-tracing rejected.
+   - *Scope:* Commission a human vector artist to redraw the logo as layered SVG/AI using the 5620/6675 raster underlay. AI auto-tracing rejected.
 
-3. **RULING-04: Light-Theme Surface Treatment (PENDING)**
+4. **RULING-04: Light-Theme Surface Treatment (PENDING)**
    - *Status:* On light backgrounds, display the dark mark on a dark tile panel until an independently approved on-light recolored artwork is authored.

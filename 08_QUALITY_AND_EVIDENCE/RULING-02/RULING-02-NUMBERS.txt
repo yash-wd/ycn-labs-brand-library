@@ -52,7 +52,7 @@ Fixed Point 1 (YCN white letterform, x=2764, y=1884):
 Fixed Point 2 (LABS cyan letterform, x=3729, y=3082):
   Dark:  RGBA [2, 243, 255, 255]
   Light: RGBA [0, 87, 110, 255]
-Fixed Point 3 (Crescent blue body, x=4442, y=3198):
+Fixed Point 3 (LABS cyan letterform [S right stem], x=4442, y=3198):
   Dark:  RGBA [1, 217, 255, 255]
   Light: RGBA [0, 101, 153, 255]
 

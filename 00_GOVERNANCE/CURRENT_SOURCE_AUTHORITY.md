@@ -2,8 +2,13 @@
 
 **Document ID:** `00_GOVERNANCE/CURRENT_SOURCE_AUTHORITY.md`  
 **Date Established:** 2026-10-13  
-**Controlling Authority:** Owner RULING-01, Owner Decision `BRAND-DAY-CLOSE-09`  
+**Controlling Authority:** Owner RULING-01  
 **Status:** Permanent Controlling Baseline for All Brand & Identity Operations  
+
+> **Package Checksum Baseline Notice:**  
+> `PACKAGE-SHA256SUMS.txt` describes the ZIP as delivered on 13 Oct. `README.md`, `01_IMMUTABLE_SOURCE/SHA256SUMS.txt` and `08_QUALITY_AND_EVIDENCE/QA_RELEASE_GATES.md` were edited afterwards on purpose and show FAILED there. The live check is `14_CONTINUITY/SHA256SUMS.txt`; originals are inside `12_ORIGINAL_PACKAGES/`.  
+
+
 
 ---
 
