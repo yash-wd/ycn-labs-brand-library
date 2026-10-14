@@ -30,7 +30,7 @@ This repository serves as the centralized public brand asset archive, source fre
 - **Light Transparent Master (5620×4580):**  
   `11_HISTORICAL_ASSETS/masters/ycn-logo-light-transparent-MASTER.png`  
   *SHA-256:* `416de4b7c83a051cf9d11c3e4c88a36690b8be248ef5edb81f7a350af72b28a9`  
-  *Status:* Not yet compared; approval pending (**RULING-02**).
+  *Status:* Compared 13 Oct 2026: alpha IoU 97.2464% vs the dark master (see `08_QUALITY_AND_EVIDENCE/RULING-02/RULING-02-NUMBERS.txt`); approval pending (**RULING-02b**).
 
 ### C. Excluded & Reference-Only Assets
 - `11_HISTORICAL_ASSETS/masters/YCN_LABS_logo_8K.png` (7680×7680, SHA-256: `ca90462d...`): Excluded (near-square 1.04:1 aspect ratio, different layout).
@@ -68,14 +68,14 @@ YCN_LABS_BRAND_LIBRARY/
 - **Authoritative Brand References:** Any brand artwork reference, presentation asset, or media graphic must source directly from `01_IMMUTABLE_SOURCE/`.
 - **Unfinished Work:**
   - True resolution-independent vector masters (SVG/AI) are **NOT YET PRODUCED**. AI auto-tracing has been rejected; a human vector artist will redraw the master using the 5620/6675 PNG underlay.
-  - Production all-size export kit (favicons, app icons, social variants) will be generated after RULING-02 approval.
+  - Opaque on-dark PNG exports (128–2048 px) built under BRAND-EXPORT-05 from the RULING-01 master, pending Owner acceptance. Transparent variants follow RULING-02; favicons and app icons follow a small-mark ruling.
 
 ---
 
 ## 4. How to Resume Work Tomorrow
 
 For any pair-programming agent or engineer starting a new session:
-1. Consult `14_CONTINUITY/START_TOMORROW.md` for complete autonomous recovery instructions.
+1. Consult `14_CONTINUITY/RESUME_HERE.md` (canonical entry point; `START_TOMORROW.md` only points to it).
 2. Review `14_CONTINUITY/OPEN_OWNER_DECISIONS.md` for pending Owner decisions (RULING-02 through RULING-04).
 3. Validate repository integrity via `sha256sum -c 14_CONTINUITY/SHA256SUMS.txt`.
 

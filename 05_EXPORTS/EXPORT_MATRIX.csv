@@ -1,9 +1,9 @@
 component,theme,format,target_dimensions,use,release_gate
-full-lockup,on-dark,PNG,128;256;512;1024;2048,WEB/PRINT,Pending: only unchanged original is approved
+full-lockup,on-dark,PNG,128;256;512;1024;2048,WEB/PRINT,BRAND-EXPORT-05 (14 Oct 2026): opaque downscales 128-2048 of RULING-01 master built; Owner acceptance PENDING; transparent variant awaits RULING-02a
 full-lockup,on-light,PNG,128;256;512;1024;2048,WEB/PRINT,Exact source on a dark tile currently; transparent/light adaptation requires owner approval
 full-lockup,on-dark,SVG,resolution-independent geometry,WEB/PRINT,Future candidate: fidelity and glow technical proof required
 full-lockup,on-light,SVG,resolution-independent geometry,WEB/PRINT,Future candidate: explicit light-use owner approval required
-mark-only,on-dark,SVG;PNG,16;32;48;64;128;180;192;256;512;1024,FAVICON/APP/SOCIAL,No approved symbol-only asset exists; owner sign-off required
+mark-only,on-dark,SVG;PNG,16;32;48;64;128;180;192;256;512;1024,FAVICON/APP/SOCIAL,BRAND-EXPORT-05: crop candidates A/B/C proposed in 05_EXPORTS/CANDIDATES/small-mark; none approved; owner sign-off required
 mark-only,on-light,SVG;PNG,16;32;48;64;128;180;192;256;512;1024,FAVICON/APP/SOCIAL,No approved symbol-only asset exists; owner sign-off required
 wordmark-only,on-dark,SVG;PNG,256;512;1024;2048,DOCS/WEB,Crop/extraction is derivative; sign-off required
 wordmark-only,on-light,SVG;PNG,256;512;1024;2048,DOCS/WEB,Crop/extraction is derivative; sign-off required
@@ -11,6 +11,6 @@ full-logo,single-ink,PDF;SVG;EPS,vector,STAMP/EMBOSS/LASER,Requires explicit sep
 full-lockup,on-dark,PDF/X-4,vector or validated hybrid,PRINT,CMYK/vendor proof after vector/hybrid sign-off
 social-avatar,platform-dependent,PNG,400;800;1024,SOCIAL,Template geometry and logo safe area must be approved
 open-graph,brand panel,PNG;WEBP,1200x630,WEB/SOCIAL,Composition template is not a logo master; preserve original artwork
-app-icon,platform-dependent,PNG,180;192;512,APP,Needs owner-approved icon crop / optical simplification
-favicon,platform-dependent,PNG;ICO;SVG,16;32;48,WEB,Requires optical simplification approval
+app-icon,platform-dependent,PNG,180;192;512,APP,Needs owner-approved icon crop / optical simplification; BRAND-EXPORT-05 candidates B and C proposed; none approved
+favicon,platform-dependent,PNG;ICO;SVG,16;32;48,WEB,Requires optical simplification approval; BRAND-EXPORT-05 candidate B proposed; none approved
 animated-lockup,on-dark,MOV ProRes4444;WebM alpha;MP4,1080p;4K (as deliverable),VIDEO,Future only; animation of image needs owner approval

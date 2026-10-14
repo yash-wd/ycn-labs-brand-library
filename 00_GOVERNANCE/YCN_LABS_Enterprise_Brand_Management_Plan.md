@@ -92,6 +92,8 @@ The full reference contains additional intermediate gradients, reflections, shad
 
 ## 8. Immediate action
 
+> **HISTORICAL — superseded 14 Oct 2026.** BRAND-SOURCE-CONTROL-03 is complete. The current next task is always the one named in `14_CONTINUITY/RESUME_HERE.md`.
+
 Transfer the unchanged official PNG (directly or in the provided ZIP) to AGY. The first AGY task is **BRAND-SOURCE-CONTROL-03**, supplied in the foundation kit. It only verifies and stores the source, updates *proposed* governance records, and reports evidence. **No logo redraw, background removal, vector or website change** is approved by that task.
 
 After AGY returns a passing source-freeze audit, obtain a precision reconstruction feasibility proposal. Approve production only when the method respects every fine detail. If exact optical equivalence is impossible, keep the source PNG as the sole official graphic and document the usage limitations.

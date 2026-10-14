@@ -1,5 +1,7 @@
 # Precision reconstruction brief — not approval to redraw
 
+> Note (14 Oct 2026): under RULING-01 the source is the 6675 × 5195 master `01_IMMUTABLE_SOURCE/Main_YCN_LABS_logo_black_8K__6675x5195.png`. The 2048 × 1593 figure below describes the earlier reference copy.
+
 ## Engineering truth
 
 - PNG is a raster grid of 2048 × 1593 pixels with opaque background, no independent art layers.

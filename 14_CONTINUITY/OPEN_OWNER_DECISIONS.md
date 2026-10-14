@@ -22,3 +22,9 @@
 
 4. **RULING-04: Light-Theme Surface Treatment (PENDING)**
    - *Status:* On light backgrounds, display the dark mark on a dark tile panel until an independently approved on-light recolored artwork is authored.
+5. **RULING-05: Small-Mark Selection (PENDING)**
+   - *Scope:* Native crop candidates A (YCN crop; navbar), B (YCN-centred square; favicon) and C (full-logo square; app icon) in `05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/`; previews in `05_EXPORTS/CANDIDATES/small-mark/`.
+   - *Rule:* Each approval names one exact native file, its full SHA-256 and its permitted use; different uses may use different candidates. Choosing a preview is not approval. The Owner may reject all candidates; rejection does not by itself authorise a redesign or commission.
+
+6. **BRAND-EXPORT-05 Acceptance (PENDING)**
+   - *Scope:* Owner visual acceptance of the five opaque exports in `05_EXPORTS/WEB/full-lockup_on-dark-opaque/`, via `08_QUALITY_AND_EVIDENCE/BRAND-EXPORT-05/PROOF_SHEET.png`.

@@ -37,8 +37,16 @@
 ## 3. Exactly ONE Next Task Per Active Workstream
 
 - **Brand Library Workstream:**  
-  **Next Task:** **`RULING-02a/b Approval, then BRAND-EXPORT-05`**  
-  Owner inspects `08_QUALITY_AND_EVIDENCE/RULING-02/RULING-02-SHEET.png` and `RULING-02-NUMBERS.txt` to approve dark master (`RULING-02a`) and light master (`RULING-02b`). Once approved, generate the production export matrix (favicons, app icons, web variants, OpenGraph banners).
+  **Next Task:** **Owner acceptance of BRAND-EXPORT-05 (opaque-first), then rulings 02a/02b/04 and RULING-05**
+  Opaque on-dark exports (128–2048 px) and small-mark candidates are built and await Owner acceptance: inspect `08_QUALITY_AND_EVIDENCE/BRAND-EXPORT-05/PROOF_SHEET.png`, `05_EXPORTS/MANIFEST_BRAND-EXPORT-05.json` and `05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/`. Remaining brand work (status only; nothing here is authorised):
+    - Transparent on-dark and on-light PNG kits after RULING-02a/02b, from their own approved masters; white-page treatment under RULING-04.
+    - Small-mark exports after RULING-05: favicon 16/32/48 + ICO, apple-touch 180, Android 192/512 with maskable safe-zone check, navbar files.
+    - Widths above 2048 (e.g. 3072 for 3x screens) only if a placement needs them.
+    - Final guidelines and controlled release LOGO-SYSTEM-v1.0.0: placement map, clear space, minimum sizes, theme rules, alt text "YCN Labs".
+    - Vector-artist brief (RULING-03); artist delivery and acceptance are separate later outcomes.
+    - Social avatar, Open Graph 1200x630, wordmark-only, print, single-ink and animation rows, only when required.
+    - Website integration (separate website task): one BrandLogo component, srcset 1x/2x/3x, WebP/AVIF delivery copies, favicon set, dark/light switching, viewport and density tests, and a "use approved brand files only; never generate or redraw the logo" rule in the site's AGENTS.md, CLAUDE.md and GEMINI.md.
+    - Independent external backup with a restore test; one coordinated CLOSE.
 - **Website Workstream:**  
   **Next Task:** **`YCN-NAV-ORIGINAL-STYLE-01`**  
   Restore original cyan glow with fading tail at 80 px/s (Option A) with bounded test update to `__tests__/navbar-polish-04.test.tsx` (PENDING OWNER APPROVAL). Owner must say "A" and "yes" to proceed.
@@ -81,6 +89,8 @@
 ---
 
 ## 7. Operational Roles for Future AI Sessions
+
+> Brand workstream from 14 Oct 2026: Claude plans tasks; GPT independently reviews tasks and evidence; AGY executes; the Owner approves artwork and authorises every push.
 
 - **GPT:** Formulates strategy, scopes single atomic tasks, strictly respects `RESUME_HERE.md`.
 - **Claude:** Inspects raw output, audits cryptographic hashes, enforces review gates: Commit → Evidence → Claude PASS → Owner push.

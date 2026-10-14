@@ -4,7 +4,7 @@
 
 - Logo mark, lettering, gradient, orbital details, faint nodes and glow come only from the final approved files. No unofficial redraws or AI-generated recreations.
 - Never stretch/non-uniformly resize, skew, distort, rotate, recolor, sharpen destructively, remove components, add fonts, paste other logos inside, or mix parts from different versions.
-- Do not crop visible nodes, orbit terminals or flare. Respect whole-source aspect ratio 2048:1593 unless a distinct, Owner-approved crop/lockup exists.
+- Do not crop visible nodes, orbit terminals or flare. Respect the full-composition aspect ratio of the approved source (6675:5195 for the RULING-01 master) unless a distinct, Owner-approved crop/lockup exists.
 - Size only proportionally. Avoid JPEG as a transparency master; PNG is lossless but finite-resolution. WEBP/AVIF may be web delivery variants but never supersede source PNG.
 - Clear space must be computed from measured outer artwork bounds after source decomposition and approved with actual usage proofs; **do not invent an official X-based clearance yet**.
 - Minimum usable printed/digital sizes must be verified by optical proofs for full logo and mark-only variants; current detailed composition will not work at every icon size.
