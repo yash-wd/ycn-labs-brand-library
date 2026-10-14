@@ -1,21 +1,30 @@
 {
   "task": "BRAND-EXPORT-05",
+  "fix": "FIX-01",
   "date": "2026-10-14",
+  "supersedes_outputs_of_commit": "234846841534cd97961fa8555051dcf73ef086dd",
   "source_path": "01_IMMUTABLE_SOURCE/Main_YCN_LABS_logo_black_8K__6675x5195.png",
   "source_sha256": "0ceebe4ccf81c478b8b2b2b6674f98ccc4dc93308c8a0e053243984c3a2c2be3",
-  "recipe_path": "10_AGENT_HANDOFF/export_png_kit.py",
-  "recipe_sha256": "61eb78833e2bdd57147ea9ac1c367dc44fcce84eeb17a937d0b5bb2f5ca70a21",
-  "python_version": "3.12.13",
-  "pillow_version": "12.2.0",
-  "color_handling": "source contains cHRM chromaticity (standard sRGB primaries: white 0.3127/0.329, R 0.64/0.33, G 0.3/0.6, B 0.15/0.06); no embedded ICC profile; no colour conversion performed; no official colour profile established by this task",
-  "ycn_box": {
-    "x0": 1706,
-    "y0": 2039,
-    "x1": 5574,
-    "y1": 3136,
-    "width": 3868,
-    "height": 1097
+  "source_colour_chunks": {
+    "cHRM": "00007a26000080840000fa00000080e8000075300000ea6000003a9800001770"
   },
+  "colour_handling": "The master's only colour chunk (cHRM, 32 bytes) is copied byte-for-byte into every PNG written here. The master has no gAMA, sRGB, iCCP or cICP chunk and none is added. No colour conversion is performed. No official colour profile is established by this task.",
+  "recipe_path": "10_AGENT_HANDOFF/export_png_kit_v2.py",
+  "recipe_sha256": "a2f441aab7e81926fa4f9152d8686e54f39e56fc70ac5755d511bf0bf8ccecde",
+  "toolchain": {
+    "python_version": "3.12.13",
+    "pillow_version": "12.2.0",
+    "zlib_runtime_version": "1.3.1",
+    "zlib_compile_version": "1.3.1",
+    "png_compress_level": 9,
+    "proof_font": "Aileron Regular, 18 px, Pillow load_default"
+  },
+  "ycn_box": [
+    1706,
+    2039,
+    5574,
+    3136
+  ],
   "candidate_boxes": {
     "A_ycn-crop": [
       1596,
@@ -55,11 +64,12 @@
     "02a",
     "02b",
     "04",
-    "RULING-05"
+    "RULING-05",
+    "BRAND-EXPORT-05 acceptance"
   ],
   "assets": [
     {
-      "asset_id": "full-lockup_on-dark-opaque_128x100",
+      "asset_id": "YCN_LABS_logo-lockup_on-dark-opaque_128x100_v1.0.0",
       "path": "05_EXPORTS/WEB/full-lockup_on-dark-opaque/YCN_LABS_logo-lockup_on-dark-opaque_128x100_v1.0.0.png",
       "variant": "full-lockup_on-dark-opaque",
       "status": "PENDING_OWNER_ACCEPTANCE",
@@ -68,12 +78,17 @@
       "height": 100,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "LANCZOS resize of master",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "RULING-01 source; export acceptance PENDING",
-      "sha256": "b8c8b3edce56b64ded424268e5815754dee375e0313654885d8753fd67894b79"
+      "sha256": "455dc2d2304a5cbb0016b2e6971293b0852fc1185e482753f23b36d006679761"
     },
     {
-      "asset_id": "full-lockup_on-dark-opaque_256x199",
+      "asset_id": "YCN_LABS_logo-lockup_on-dark-opaque_256x199_v1.0.0",
       "path": "05_EXPORTS/WEB/full-lockup_on-dark-opaque/YCN_LABS_logo-lockup_on-dark-opaque_256x199_v1.0.0.png",
       "variant": "full-lockup_on-dark-opaque",
       "status": "PENDING_OWNER_ACCEPTANCE",
@@ -82,12 +97,17 @@
       "height": 199,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "LANCZOS resize of master",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "RULING-01 source; export acceptance PENDING",
-      "sha256": "7182045c17983564e4cfeb2bd1506f70657a69fb38a4fa802036430cec7e0ca9"
+      "sha256": "58fe3a8182c9db4f6790ffac7363c1fb392e0efaadc12828a80f6d352ca887a2"
     },
     {
-      "asset_id": "full-lockup_on-dark-opaque_512x398",
+      "asset_id": "YCN_LABS_logo-lockup_on-dark-opaque_512x398_v1.0.0",
       "path": "05_EXPORTS/WEB/full-lockup_on-dark-opaque/YCN_LABS_logo-lockup_on-dark-opaque_512x398_v1.0.0.png",
       "variant": "full-lockup_on-dark-opaque",
       "status": "PENDING_OWNER_ACCEPTANCE",
@@ -96,12 +116,17 @@
       "height": 398,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "LANCZOS resize of master",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "RULING-01 source; export acceptance PENDING",
-      "sha256": "ca8b8ab7de1d7ce88053fa5d815f46cfbb3d9715b1e9095877378a0995de9627"
+      "sha256": "c9db7624839d2dc599e340ce8b714f88f632b07974863ca66a69d8d9ff9e96ca"
     },
     {
-      "asset_id": "full-lockup_on-dark-opaque_1024x797",
+      "asset_id": "YCN_LABS_logo-lockup_on-dark-opaque_1024x797_v1.0.0",
       "path": "05_EXPORTS/WEB/full-lockup_on-dark-opaque/YCN_LABS_logo-lockup_on-dark-opaque_1024x797_v1.0.0.png",
       "variant": "full-lockup_on-dark-opaque",
       "status": "PENDING_OWNER_ACCEPTANCE",
@@ -110,12 +135,17 @@
       "height": 797,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "LANCZOS resize of master",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "RULING-01 source; export acceptance PENDING",
-      "sha256": "20f238c9d493850ffd28d6c052103c6acf359391da7be13f330e2868fb3df280"
+      "sha256": "be342ea024b1138ad2728d3be8704d90284289c09e8f5f8590bdc9a5f46ac5b7"
     },
     {
-      "asset_id": "full-lockup_on-dark-opaque_2048x1594",
+      "asset_id": "YCN_LABS_logo-lockup_on-dark-opaque_2048x1594_v1.0.0",
       "path": "05_EXPORTS/WEB/full-lockup_on-dark-opaque/YCN_LABS_logo-lockup_on-dark-opaque_2048x1594_v1.0.0.png",
       "variant": "full-lockup_on-dark-opaque",
       "status": "PENDING_OWNER_ACCEPTANCE",
@@ -124,12 +154,17 @@
       "height": 1594,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "LANCZOS resize of master",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "RULING-01 source; export acceptance PENDING",
-      "sha256": "0d99212127596e91066bc2e8abf8e6fbda58f87757ebad1c8a913b45a2952f05"
+      "sha256": "479ed518eca2881450cc4238663bf0f42786c1af7b62c560a28c232c0d6a4c6d"
     },
     {
-      "asset_id": "small-mark-native_A_ycn-crop_4088x1317",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
       "variant": "small-mark-native_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -143,12 +178,17 @@
       "height": 1317,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "none (crop only)",
+      "transform": "crop of master; no resampling",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "NONE",
-      "sha256": "ef92a73a7b263793e39bcb414711d9c00637a740d04e9bd90323c140cff3e043"
+      "sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f"
     },
     {
-      "asset_id": "small-mark-native_B_ycn-square-crop_4177x4177",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
       "variant": "small-mark-native_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -162,12 +202,17 @@
       "height": 4177,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "none (crop only)",
+      "transform": "crop of master; no resampling",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "NONE",
-      "sha256": "b1108f54ea6bdce4fb07fcdcb991889bfe72f86691cd4d5f63a6f888e946e558"
+      "sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874"
     },
     {
-      "asset_id": "small-mark-native_C_full-square-crop_5195x5195",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
       "variant": "small-mark-native_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -181,12 +226,17 @@
       "height": 5195,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "none (crop only)",
+      "transform": "crop of master; no resampling",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "NONE",
-      "sha256": "32c1e20355e3270f318bd1aa2ea1ba1c97e78b6b803fe0258f778bc178366b92"
+      "sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8"
     },
     {
-      "asset_id": "small-mark-preview_A_ycn-crop_74x24",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_74x24_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-A_ycn-crop_74x24_CANDIDATE.png",
       "variant": "small-mark-preview_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -200,12 +250,17 @@
       "height": 24,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f",
       "approval_ref": "NONE",
-      "sha256": "06257325d22ea85682e6c936a5ca54c7090da3a53ad8b0f3528bc374d4b147e4"
+      "sha256": "963791ed18ba6a239ee610c6f6883e3a16147056ad0d5a709deccdf3862aa516"
     },
     {
-      "asset_id": "small-mark-preview_A_ycn-crop_99x32",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_99x32_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-A_ycn-crop_99x32_CANDIDATE.png",
       "variant": "small-mark-preview_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -219,12 +274,17 @@
       "height": 32,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f",
       "approval_ref": "NONE",
-      "sha256": "4ea4ab779513803b4a7a3680b723f914afe41fc9887881011c2ed88a16689025"
+      "sha256": "8ad764090b4767edeaa52f1a8ead82eb6d3417c2fb6dc083679565a841471aa2"
     },
     {
-      "asset_id": "small-mark-preview_A_ycn-crop_124x40",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_124x40_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-A_ycn-crop_124x40_CANDIDATE.png",
       "variant": "small-mark-preview_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -238,12 +298,17 @@
       "height": 40,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f",
       "approval_ref": "NONE",
-      "sha256": "ec9e3f5b5e1d5dcfc1ca5b150cce3e9eb31b46c534807e52942bf4b547ae9b42"
+      "sha256": "d9b4e541c8107af037bf50dbbeb2901a130eb86f42eba931d0835056160a1289"
     },
     {
-      "asset_id": "small-mark-preview_A_ycn-crop_149x48",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_149x48_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-A_ycn-crop_149x48_CANDIDATE.png",
       "variant": "small-mark-preview_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -257,12 +322,17 @@
       "height": 48,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f",
       "approval_ref": "NONE",
-      "sha256": "c945243c49d7b9c95ffd8695e77f055cdff166d59521ed6d9e8cd3e1bc000b77"
+      "sha256": "bf94da2b1fdad84395ff60350fec6ec98988d9bc1915eab1a8bc3a11948116a0"
     },
     {
-      "asset_id": "small-mark-preview_A_ycn-crop_199x64",
+      "asset_id": "YCN_LABS_small-mark-A_ycn-crop_199x64_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-A_ycn-crop_199x64_CANDIDATE.png",
       "variant": "small-mark-preview_A_ycn-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -276,12 +346,17 @@
       "height": 64,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-A_ycn-crop_4088x1317_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "b95c8d03982ed572773cd56868bd1beb64d212eb17144af4124e6fc2c97f507f",
       "approval_ref": "NONE",
-      "sha256": "4cf9c0f8dfbcd2d34a16cce0c0a76a48a579c3ebafc92cb5adcd9f2523ec60df"
+      "sha256": "2fad34fafd58f3f5b50eb7fdff9ec6108df8d2f3a4d430a83c5d0aa9e690de11"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_16x16",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_16x16_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_16x16_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -295,12 +370,17 @@
       "height": 16,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "b631886b0f315ee93015721218e13d072e2bb87a218527d67a0aeae5cbec5be5"
+      "sha256": "ecbf760ee885098f499e31926f5af0b7bcf4f0f08212d232992f1d717b251f8c"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_32x32",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_32x32_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_32x32_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -314,12 +394,17 @@
       "height": 32,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "6fb96297eb148779c3e841bbe9b114447303101fda5489948253195bdac80e97"
+      "sha256": "aba743d287888623052241419c76b7d3b927f95385a209a1a727051b5fd8f8f4"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_48x48",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_48x48_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_48x48_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -333,12 +418,17 @@
       "height": 48,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "9f12c5a97d8281e1a33830c924372df859992fc66b1756f241bf93ce0328d81d"
+      "sha256": "d61c63da196ac97ff6521bac586b4006b6c8f2c9e8adba343761af7a7b02078a"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_64x64",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_64x64_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_64x64_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -352,12 +442,17 @@
       "height": 64,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "96a491fb748e9df12f43af5477763e3c13f7bea7be21bd583e97afc5a319c01e"
+      "sha256": "b1bba486367abf32bbe0a7f81070f913da1e40902ac91340d3cff3f75741fd79"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_180x180",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_180x180_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_180x180_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -371,12 +466,17 @@
       "height": 180,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "11c91ec1a257c42f75e0a2beafc0b992256526a94c53dc4c6c4afdb04b958767"
+      "sha256": "74744719d7e88ff59c34bff6938b8e179c89635a108e1bf1544ad7b100848791"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_192x192",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_192x192_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_192x192_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -390,12 +490,17 @@
       "height": 192,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "f75eea9068460b19936debe899cf6f950e9d7044ee0a601796b3f40f6b7770a6"
+      "sha256": "9e5f689246d37900f483ecbc08fcb058c94c412fb3e2153e0e79330bd533ce4b"
     },
     {
-      "asset_id": "small-mark-preview_B_ycn-square-crop_512x512",
+      "asset_id": "YCN_LABS_small-mark-B_ycn-square-crop_512x512_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-B_ycn-square-crop_512x512_CANDIDATE.png",
       "variant": "small-mark-preview_B_ycn-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -409,12 +514,17 @@
       "height": 512,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-B_ycn-square-crop_4177x4177_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "5d62c61061d98be9a9bfe61c7a2829d8a4ad107f0b40a045213d35b870c8a874",
       "approval_ref": "NONE",
-      "sha256": "415dc476e8c4fe507e11d36e5088d20029d535cd65e049c705984ab9f6377cec"
+      "sha256": "ee882bf4596222b10f4d8149e5cdb14ecde40462e2bda8a9883a2d520a5724ed"
     },
     {
-      "asset_id": "small-mark-preview_C_full-square-crop_48x48",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_48x48_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-C_full-square-crop_48x48_CANDIDATE.png",
       "variant": "small-mark-preview_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -428,12 +538,17 @@
       "height": 48,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8",
       "approval_ref": "NONE",
-      "sha256": "662898a824d2223963eac3019f4a96170c0ca472d32d74be773df67acb4cfa07"
+      "sha256": "da467ed25314e91408dd53dd73f028a9c5619d117ead1aeb2f7bec9c09adf8db"
     },
     {
-      "asset_id": "small-mark-preview_C_full-square-crop_64x64",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_64x64_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-C_full-square-crop_64x64_CANDIDATE.png",
       "variant": "small-mark-preview_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -447,12 +562,17 @@
       "height": 64,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8",
       "approval_ref": "NONE",
-      "sha256": "0caf43946c46a337832f1d094bd941f7c5dd2c25c7f07c9ed8ccec1aa41ee8d0"
+      "sha256": "191c1b61eedaeee24f193776cb7388b5fee00aa26f8ab34aee68289984f73bc3"
     },
     {
-      "asset_id": "small-mark-preview_C_full-square-crop_180x180",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_180x180_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-C_full-square-crop_180x180_CANDIDATE.png",
       "variant": "small-mark-preview_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -466,12 +586,17 @@
       "height": 180,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8",
       "approval_ref": "NONE",
-      "sha256": "1b995e3237fae1ea7472e0b59fa82b971e303e3b5063c1929e45d6d12b62665f"
+      "sha256": "e9c8d37093ba890291daadaced30384d70aaa8e08949543aaa3f42e2cf0d0768"
     },
     {
-      "asset_id": "small-mark-preview_C_full-square-crop_192x192",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_192x192_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-C_full-square-crop_192x192_CANDIDATE.png",
       "variant": "small-mark-preview_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -485,12 +610,17 @@
       "height": 192,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8",
       "approval_ref": "NONE",
-      "sha256": "d169ff9aa1d166df0d30b54e4b32deef8311c9fd588ff46078bd531c592bf8db"
+      "sha256": "fb3b7f3ce0051225efa03a70774ad3e70365ea1108e370be6c72fe6c2fb2c6f3"
     },
     {
-      "asset_id": "small-mark-preview_C_full-square-crop_512x512",
+      "asset_id": "YCN_LABS_small-mark-C_full-square-crop_512x512_CANDIDATE",
       "path": "05_EXPORTS/CANDIDATES/small-mark/YCN_LABS_small-mark-C_full-square-crop_512x512_CANDIDATE.png",
       "variant": "small-mark-preview_C_full-square-crop",
       "status": "CANDIDATE_NOT_APPROVED",
@@ -504,23 +634,33 @@
       "height": 512,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "LANCZOS",
+      "transform": "crop of master, then LANCZOS resize",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": "05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/YCN_LABS_small-mark-C_full-square-crop_5195x5195_NATIVE_CANDIDATE.png",
+      "parent_native_sha256": "e96c12fb2e8b4ba2a76f7d640afcbc5490198fa7b409e9066f00b657e6d34ab8",
       "approval_ref": "NONE",
-      "sha256": "211eeb25d0b35112dfac55ca7b86cb17f6310a604b9197f9ca35d3a1fc965b05"
+      "sha256": "12501fcefadb3676aacdc51f7cd4c7c9f27b74f061a3621b5c110bc70c7bc2d7"
     },
     {
-      "asset_id": "evidence_proof_sheet",
+      "asset_id": "PROOF_SHEET",
       "path": "08_QUALITY_AND_EVIDENCE/BRAND-EXPORT-05/PROOF_SHEET.png",
       "variant": "proof-sheet",
       "status": "EVIDENCE",
       "crop_box": null,
       "width": 2200,
-      "height": 5660,
+      "height": 8425,
       "mode": "RGB",
       "alpha": "none (opaque)",
-      "resample": "annotated composition",
+      "transform": "annotated composition (FIX-01 layout)",
+      "colour_chunks": [
+        "cHRM copied from master"
+      ],
+      "parent_native_path": null,
+      "parent_native_sha256": null,
       "approval_ref": "NONE",
-      "sha256": "4d235f7b2ec127ac716322d0756717f242becd76f469dbf73ad64e0431a1e952"
+      "sha256": "f329f2f902c7cacdba44ebc7bca2cf12feb1e6d701ae364d67853dc2b3417f8e"
     }
   ]
 }
