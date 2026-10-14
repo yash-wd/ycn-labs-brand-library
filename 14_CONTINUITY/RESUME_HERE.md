@@ -37,16 +37,20 @@
 ## 3. Exactly ONE Next Task Per Active Workstream
 
 - **Brand Library Workstream:**  
-  **Next Task:** **Owner acceptance of BRAND-EXPORT-05 (opaque-first), then rulings 02a/02b/04 and RULING-05**
-  Opaque on-dark exports (128–2048 px) and small-mark candidates are built and await Owner acceptance: inspect `08_QUALITY_AND_EVIDENCE/BRAND-EXPORT-05/PROOF_SHEET.png`, `05_EXPORTS/MANIFEST_BRAND-EXPORT-05.json` and `05_EXPORTS/CANDIDATES/small-mark/SOURCE_CANDIDATES/`. Remaining brand work (status only; nothing here is authorised):
-    - Transparent on-dark and on-light PNG kits after RULING-02a/02b, from their own approved masters; white-page treatment under RULING-04.
-    - Small-mark exports after RULING-05: favicon 16/32/48 + ICO, apple-touch 180, Android 192/512 with maskable safe-zone check, navbar files.
-    - Widths above 2048 (e.g. 3072 for 3x screens) only if a placement needs them.
-    - Final guidelines and controlled release LOGO-SYSTEM-v1.0.0: placement map, clear space, minimum sizes, theme rules, alt text "YCN Labs".
-    - Vector-artist brief (RULING-03); artist delivery and acceptance are separate later outcomes.
-    - Social avatar, Open Graph 1200x630, wordmark-only, print, single-ink and animation rows, only when required.
-    - Website integration (separate website task): one BrandLogo component, srcset 1x/2x/3x, WebP/AVIF delivery copies, favicon set, dark/light switching, viewport and density tests, and a "use approved brand files only; never generate or redraw the logo" rule in the site's AGENTS.md, CLAUDE.md and GEMINI.md.
-    - Independent external backup with a restore test; one coordinated CLOSE.
+  **Next Task:** **Owner visual acceptance of BRAND-EXPORT-05 (opaque-first), then rulings 02a/02b/04 and RULING-05**
+  Current logo work lives on branch `wip/brand-export-05` (FIX-01 at commit `037b7ccf5e30b41a0ba2927d4dbfc7f48a393c6f`, plus later documentation commits). `main` advances only after review, Owner visual acceptance and an explicit Owner "PUSH"; acceptance alone is not permission to publish. Future sessions must check that branch, not only `main`.
+  Logo checklist, 14 Oct 2026 (status only; nothing here is authorised):
+    1. Opaque full-logo PNGs 128-2048 and small-mark candidates (BRAND-EXPORT-05): BUILT AND TECHNICALLY VERIFIED (FIX-01). Waiting for Owner visual acceptance, then an explicit PUSH.
+    2. Transparent dark and light PNG kits: NOT STARTED. Waiting for rulings 02a, 02b and 04.
+    3. Final navbar, favicon and app-icon kit (favicon 16/32/48 + ICO, apple-touch 180, Android 192/512 with maskable safe-zone check, navbar files): CANDIDATES A/B/C BUILT; final kit not started. Waiting for RULING-05 per use.
+    4. Final guidelines and controlled release LOGO-SYSTEM-v1.0.0 (approved-file index, placement map, clear space, minimum sizes, theme rules, alt text "YCN Labs"): DRAFTS EXIST in `07_GUIDELINES/`. Waiting for items 1-3.
+    5. Vector-artist brief (RULING-03): DRAFT EXISTS in the archived review kit `12_ORIGINAL_PACKAGES/YCN_LABS_Logo_Review_Kit_v0.1__REVIEW_ONLY.zip`. Waiting for finalisation.
+    6. Coordinated CLOSE: NOT DONE. Runs once after both the logo and website sessions stop; it records the actual state and does not complete the logo project.
+    7. Later - website integration (separate website task): NOT STARTED. Needs accepted logo files; one BrandLogo component, srcset 1x/2x/3x, WebP/AVIF delivery copies, favicon set, dark/light switching, viewport and density tests, and a "use approved brand files only; never generate or redraw the logo" rule in the site's AGENTS.md, CLAUDE.md and GEMINI.md.
+    8. Later - vector/hybrid master delivered and accepted: NOT STARTED. Needs a hired artist and a reviewed delivery.
+    9. Later - independent external backup with a restore test: NOT STARTED. Needs a backup destination chosen by the Owner.
+  Only when required: widths above 2048 (e.g. 3072), social avatar, Open Graph 1200x630, wordmark-only, print, single-ink, animation.
+  The website repository should carry a matching BRAND-LOGO-CARRY-FORWARD reminder, added by its own session.
 - **Website Workstream:**  
   **Next Task:** **`YCN-NAV-ORIGINAL-STYLE-01`**  
   Restore original cyan glow with fading tail at 80 px/s (Option A) with bounded test update to `__tests__/navbar-polish-04.test.tsx` (PENDING OWNER APPROVAL). Owner must say "A" and "yes" to proceed.
@@ -63,6 +67,7 @@
    Deferred to v2.0. Commission human vector artist with raster underlay. AI auto-tracing strictly rejected.
 4. **`RULING-04` (Light-Theme Surface Treatment):**  
    On light backgrounds, display the dark mark inside a dark container tile pending finalized on-light artwork.
+5. **`RULING-05` and BRAND-EXPORT-05 acceptance:** pending; see `14_CONTINUITY/OPEN_OWNER_DECISIONS.md` items 5 and 6.
 
 ---
 
@@ -90,8 +95,10 @@
 
 ## 7. Operational Roles for Future AI Sessions
 
-> Brand workstream from 14 Oct 2026: Claude plans tasks; GPT independently reviews tasks and evidence; AGY executes; the Owner approves artwork and authorises every push.
+Brand workstream (from 14 Oct 2026):
+- **Claude:** plans tasks and writes exact, fail-fast runners.
+- **GPT:** independently reviews every task before execution and every result after it, using the committed files on GitHub.
+- **AGY:** Linux execution agent; runs only reviewed, Owner-authorised blocks; never repairs, retries or improvises after a failed check. Its narration is not evidence; committed files are.
+- **Owner:** approves artwork and authorises every push to `main`.
 
-- **GPT:** Formulates strategy, scopes single atomic tasks, strictly respects `RESUME_HERE.md`.
-- **Claude:** Inspects raw output, audits cryptographic hashes, enforces review gates: Commit → Evidence → Claude PASS → Owner push.
-- **AGY:** Linux execution agent, runs commands, captures stdout/stderr, adheres strictly to non-destructive constraints.
+Website workstream: roles and process are defined in the website repository (`AGENTS.md`, `docs/`).

@@ -1,0 +1,13 @@
+=== 1 starting state ===
+2026-10-14T14:09:51+05:30
+start OK: HEAD 037b7ccf5e30b41a0ba2927d4dbfc7f48a393c6f, clean tree, inventory 122 OK, remotes as expected
+=== 2 edit RESUME_HERE.md: brand block, decisions pointer, roles ===
+RESUME_HERE.md edited
+=== 3 inventory: update the RESUME_HERE entry ===
+inventory entries: 122
+inventory: 122 entries, all OK
+=== 4 checks and staging ===
+scan: no secret-like pattern in 14_CONTINUITY/RESUME_HERE.md
+21	14	14_CONTINUITY/RESUME_HERE.md
+1	1	14_CONTINUITY/SHA256SUMS.txt
+documentation changes staged; the BRAND-DOC-01 log ends here
